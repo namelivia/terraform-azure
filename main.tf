@@ -78,7 +78,7 @@ resource "azurerm_linux_virtual_machine" "example" {
 
   admin_ssh_key {
     username   = "adminuser"
-    public_key = "${var.subscription_id}"
+    public_key = "${var.ssh_key}"
   }
 
   os_disk {
